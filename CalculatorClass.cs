@@ -9,27 +9,31 @@ namespace CalculatorApplication
 {
     internal class CalculatorClass
     {
-        public delegate X Formula<X>(X arg);
+        public delegate X Formula<X>(X num1, X num2);
         public Formula<double> formula;
 
-        public double GetSum(double num)
+        public double GetSum(double num1, double num2)
         {
-            return num;
+            return num1 + num2;
         }
 
-        public double GetDifference(double num)
+        public double GetDifference(double num1, double num2)
         {
-            return num;
+            return num1 - num2;
         }
 
-        public double GetProduct(double num)
+        public double GetProduct(double num1, double num2)
         {
-            return num;
+            return num1 * num2;
         }
 
-        public double GetQuotient(double num)
+        public double GetQuotient(double num1, double num2)
         {
-            return num;
+            if (num2 == 0)
+            {
+                throw new DivideByZeroException("Cannot divide by zero.");
+            }
+            return num1 / num2;
         }
 
         public event Formula<double> CalculateEvent

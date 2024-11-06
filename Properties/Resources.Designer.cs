@@ -63,6 +63,17 @@ namespace CalculatorApplication.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap desktop_wallpaper_minimalist_android_posted_by_ryan_tremblay_android_minimal_thumbnail {
+            get {
+                object obj = ResourceManager.GetObject("desktop-wallpaper-minimalist-android-posted-by-ryan-tremblay-android-minimal-thum" +
+                        "bnail", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap gradient_background_3840x2400_10974 {
             get {
                 object obj = ResourceManager.GetObject("gradient-background-3840x2400-10974", resourceCulture);

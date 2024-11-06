@@ -84,5 +84,8 @@
   <ItemGroup>
     <None Include="Resources\gradient-background-3840x2400-10974.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\desktop-wallpaper-minimalist-android-posted-by-ryan-tremblay-android-minimal-thumbnail.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

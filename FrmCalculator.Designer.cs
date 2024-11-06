@@ -41,10 +41,10 @@
             // 
             // btnEqual
             // 
-            this.btnEqual.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnEqual.BackColor = System.Drawing.Color.NavajoWhite;
             this.btnEqual.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEqual.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEqual.Location = new System.Drawing.Point(234, 178);
+            this.btnEqual.Location = new System.Drawing.Point(260, 173);
             this.btnEqual.Name = "btnEqual";
             this.btnEqual.Size = new System.Drawing.Size(114, 37);
             this.btnEqual.TabIndex = 15;
@@ -56,8 +56,8 @@
             // 
             this.lblDisplayTotal.AutoSize = true;
             this.lblDisplayTotal.BackColor = System.Drawing.Color.Transparent;
-            this.lblDisplayTotal.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDisplayTotal.ForeColor = System.Drawing.Color.Crimson;
+            this.lblDisplayTotal.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDisplayTotal.ForeColor = System.Drawing.Color.NavajoWhite;
             this.lblDisplayTotal.Location = new System.Drawing.Point(195, 133);
             this.lblDisplayTotal.Name = "lblDisplayTotal";
             this.lblDisplayTotal.Size = new System.Drawing.Size(45, 19);
@@ -69,8 +69,8 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Crimson;
+            this.label3.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.NavajoWhite;
             this.label3.Location = new System.Drawing.Point(118, 133);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(72, 19);
@@ -82,8 +82,8 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Crimson;
+            this.label2.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.NavajoWhite;
             this.label2.Location = new System.Drawing.Point(3, 96);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(189, 19);
@@ -95,8 +95,8 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Crimson;
+            this.label1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.NavajoWhite;
             this.label1.Location = new System.Drawing.Point(12, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(180, 19);
@@ -138,7 +138,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.Control;
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label5.Location = new System.Drawing.Point(195, 139);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(180, 19);
@@ -150,9 +150,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::CalculatorApplication.Properties.Resources.gradient_background_3840x2400_10974;
+            this.BackgroundImage = global::CalculatorApplication.Properties.Resources.desktop_wallpaper_minimalist_android_posted_by_ryan_tremblay_android_minimal_thumbnail;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(398, 237);
+            this.ClientSize = new System.Drawing.Size(394, 523);
             this.Controls.Add(this.btnEqual);
             this.Controls.Add(this.lblDisplayTotal);
             this.Controls.Add(this.label3);
@@ -163,7 +163,7 @@
             this.Controls.Add(this.txtBoxInput1);
             this.Controls.Add(this.label5);
             this.Name = "FrmCalculator";
-            this.Text = "Form1";
+            this.Text = "FrmCalculator";
             this.ResumeLayout(false);
             this.PerformLayout();
 

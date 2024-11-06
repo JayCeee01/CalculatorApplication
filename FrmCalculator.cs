@@ -27,7 +27,6 @@ namespace CalculatorApplication
 
         public void CalculateTotal()
         {
-            
             try
             {
                 CalculatorClass cal = new CalculatorClass();
@@ -38,47 +37,37 @@ namespace CalculatorApplication
                 if(cbOperator.SelectedIndex == 0) {
 
                     cal.CalculateEvent += new Formula<double>(cal.GetSum);
-                    double total = num1 + num2;
-                    lblDisplayTotal.Text = cal.GetSum(total).ToString();
+                    lblDisplayTotal.Text = cal.GetSum(num1, num2).ToString();
                     cal.CalculateEvent -= new Formula<double>(cal.GetSum);
                 } 
                 else if(cbOperator.SelectedIndex == 1)
                 {
                     cal.CalculateEvent += new Formula<double>(cal.GetDifference);
-                    double total = num1 - num2;
-                    lblDisplayTotal.Text = cal.GetSum(total).ToString();
+                    lblDisplayTotal.Text = cal.GetDifference(num1, num2).ToString();
                     cal.CalculateEvent -= new Formula<double>(cal.GetSum);
                 }
                 else if (cbOperator.SelectedIndex == 2)
                 {
                     cal.CalculateEvent += new Formula<double>(cal.GetProduct);
-                    double total = num1 * num2;
-                    lblDisplayTotal.Text = cal.GetSum(total).ToString();
+                    lblDisplayTotal.Text = cal.GetProduct(num1, num2).ToString();
                     cal.CalculateEvent -= new Formula<double>(cal.GetSum);
                 }
                 else if (cbOperator.SelectedIndex == 3)
                 {
                     cal.CalculateEvent += new Formula<double>(cal.GetQuotient);
-                    double total = num1 / num2;
-                    lblDisplayTotal.Text = cal.GetSum(total).ToString();
+                    lblDisplayTotal.Text = cal.GetQuotient(num1, num2).ToString();
                     cal.CalculateEvent -= new Formula<double>(cal.GetSum);
                 }
                 else
                 {
                     MessageBox.Show("Please enter the correct input.");
                 }
-
-
-
-
             }
             catch (Exception ex)
             {
                 MessageBox.Show("An error has occured. Please enter the correct input.");
             }
-            
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             CalculateTotal();
